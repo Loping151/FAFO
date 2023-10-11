@@ -1,0 +1,378 @@
+2023-10-09 18:52:19,636 - fetch - INFO - reading config file
+2023-10-09 18:52:19,636 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 18:52:19,637 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 18:52:20,047 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 18:52:20,048 - filelock - DEBUG - Attempting to acquire lock 139682526551392 on /home/loping151/.cache/huggingface/hub/models--openai--clip-vit-base-patch16/blobs/9f7102db4ae77c02982bfec1c16a63039fbc78db.lock
+2023-10-09 18:52:20,048 - filelock - DEBUG - Lock 139682526551392 acquired on /home/loping151/.cache/huggingface/hub/models--openai--clip-vit-base-patch16/blobs/9f7102db4ae77c02982bfec1c16a63039fbc78db.lock
+2023-10-09 18:52:20,304 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "GET /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 4104
+2023-10-09 18:52:20,308 - filelock - DEBUG - Attempting to release lock 139682526551392 on /home/loping151/.cache/huggingface/hub/models--openai--clip-vit-base-patch16/blobs/9f7102db4ae77c02982bfec1c16a63039fbc78db.lock
+2023-10-09 18:52:20,308 - filelock - DEBUG - Lock 139682526551392 released on /home/loping151/.cache/huggingface/hub/models--openai--clip-vit-base-patch16/blobs/9f7102db4ae77c02982bfec1c16a63039fbc78db.lock
+2023-10-09 18:52:20,558 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 18:52:20,816 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/model.safetensors HTTP/1.1" 404 0
+2023-10-09 18:52:21,078 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/model.safetensors.index.json HTTP/1.1" 404 0
+2023-10-09 18:52:21,338 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2023-10-09 18:52:21,339 - filelock - DEBUG - Attempting to acquire lock 139682526550816 on /home/loping151/.cache/huggingface/hub/models--openai--clip-vit-base-patch16/blobs/ec89c7b09c749a60aae3c9cd910516f24b58214a7df060b48962d14c469cfbf0.lock
+2023-10-09 18:52:21,339 - filelock - DEBUG - Lock 139682526550816 acquired on /home/loping151/.cache/huggingface/hub/models--openai--clip-vit-base-patch16/blobs/ec89c7b09c749a60aae3c9cd910516f24b58214a7df060b48962d14c469cfbf0.lock
+2023-10-09 18:52:21,340 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn-lfs.huggingface.co:443
+2023-10-09 18:52:22,523 - urllib3.connectionpool - DEBUG - https://cdn-lfs.huggingface.co:443 "GET /openai/clip-vit-base-patch16/ec89c7b09c749a60aae3c9cd910516f24b58214a7df060b48962d14c469cfbf0?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1697106888&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTY5NzEwNjg4OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9vcGVuYWkvY2xpcC12aXQtYmFzZS1wYXRjaDE2L2VjODljN2IwOWM3NDlhNjBhYWUzYzljZDkxMDUxNmYyNGI1ODIxNGE3ZGYwNjBiNDg5NjJkMTRjNDY5Y2ZiZjA~cmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=e3zAH9fQRRuiMnvPjxWq1N3GILc9f73EKPmTfz-jnztb1-Nk4ZMDJJb6pcwiYE9MJr2hnP1LbdtEPiYuJNORXwOM3CFCYhYF5PEgrnFL0Pzam27ermtc0O7fV4GD6A91DR0C9H2x~afoJVivxt2QlUTALfzk9tqhLtMPLgcHPdDB2BASXoQtG36hMLwE~CfoIdzr6F0ymVUWepzGTVRDQUGwmskvK9V5Kz3~4E8Kx1vwvLDs6BRlBwWrUTWi7pseta7fJVylnBBPE6AjlFZOJ2vUQ0gpTUhhbIcDCAVOkZErTmM2wFmfuYZZAMJCmxEIX98zbUmtgZbuufJeuX3j5Q__&Key-Pair-Id=KVTP0A1DKRTAX HTTP/1.1" 200 598641023
+2023-10-09 18:53:26,837 - filelock - DEBUG - Attempting to release lock 139682526550816 on /home/loping151/.cache/huggingface/hub/models--openai--clip-vit-base-patch16/blobs/ec89c7b09c749a60aae3c9cd910516f24b58214a7df060b48962d14c469cfbf0.lock
+2023-10-09 18:53:26,838 - filelock - DEBUG - Lock 139682526550816 released on /home/loping151/.cache/huggingface/hub/models--openai--clip-vit-base-patch16/blobs/ec89c7b09c749a60aae3c9cd910516f24b58214a7df060b48962d14c469cfbf0.lock
+2023-10-09 18:53:27,494 - fetch - ERROR - error when init fetcher, please check your network
+2023-10-09 18:53:27,494 - fetch - ERROR - cannot assign module before Module.__init__() call
+2023-10-09 18:54:04,663 - fetch - INFO - reading config file
+2023-10-09 18:54:04,664 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 18:54:04,664 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 18:54:05,024 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 18:54:05,273 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 18:54:05,949 - fetch - ERROR - error when init fetcher, please check your network
+2023-10-09 18:54:05,950 - fetch - ERROR - cannot assign module before Module.__init__() call
+2023-10-09 18:57:38,156 - fetch - INFO - reading config file
+2023-10-09 18:57:38,156 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 18:57:38,157 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 18:57:38,609 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 18:57:38,878 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 18:57:39,542 - fetch - ERROR - error when init fetcher, please check your network
+2023-10-09 18:57:39,542 - fetch - ERROR - cannot assign module before Module.__init__() call
+2023-10-09 18:57:45,363 - fetch - INFO - reading config file
+2023-10-09 18:57:45,363 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 18:57:45,365 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 18:57:45,798 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 18:57:46,047 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 18:57:46,711 - fetch - ERROR - error when init fetcher, please check your network
+2023-10-09 18:57:46,711 - fetch - ERROR - cannot assign module before Module.__init__() call
+2023-10-09 18:59:54,475 - fetch - INFO - reading config file
+2023-10-09 18:59:54,475 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 18:59:54,476 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 18:59:54,973 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 18:59:55,628 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 18:59:56,300 - fetch - ERROR - error when init fetcher, please check your network
+2023-10-09 18:59:56,300 - fetch - ERROR - cannot assign module before Module.__init__() call
+2023-10-09 19:02:23,749 - fetch - INFO - reading config file
+2023-10-09 19:02:23,750 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:02:23,751 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:02:24,225 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:02:24,472 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:02:25,398 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:02:25,649 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:03:15,205 - fetch - INFO - reading config file
+2023-10-09 19:03:15,205 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:03:15,206 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:03:15,680 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:03:15,929 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:03:16,592 - fetch - ERROR - error when init fetcher, please check your network
+2023-10-09 19:03:16,593 - fetch - ERROR - cannot assign module before Module.__init__() call
+2023-10-09 19:04:46,802 - fetch - INFO - reading config file
+2023-10-09 19:04:46,802 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:04:46,803 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:04:47,283 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:04:47,623 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:04:48,283 - fetch - ERROR - error when init fetcher, please check your network
+2023-10-09 19:04:48,284 - fetch - ERROR - cannot assign module before Module.__init__() call
+2023-10-09 19:04:56,214 - fetch - INFO - reading config file
+2023-10-09 19:04:56,215 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:04:56,216 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:04:56,705 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:04:56,955 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:04:57,623 - fetch - ERROR - error when init fetcher, please check your network
+2023-10-09 19:04:57,623 - fetch - ERROR - cannot assign module before Module.__init__() call
+2023-10-09 19:05:15,978 - fetch - INFO - reading config file
+2023-10-09 19:05:15,978 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:05:15,979 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:05:16,483 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:05:16,739 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:05:17,404 - fetch - ERROR - error when init fetcher, please check your network
+2023-10-09 19:05:17,404 - fetch - ERROR - cannot assign module before Module.__init__() call
+2023-10-09 19:05:58,715 - fetch - INFO - reading config file
+2023-10-09 19:05:58,715 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:05:58,716 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:05:59,256 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:05:59,508 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:06:00,424 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:06:00,681 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:06:00,703 - fetch - INFO - init fetcher success
+2023-10-09 19:07:49,828 - fetch - INFO - reading config file
+2023-10-09 19:07:49,828 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:07:49,829 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:07:50,326 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:07:50,580 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:07:51,496 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:07:51,748 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:07:51,769 - fetch - INFO - init fetcher success
+2023-10-09 19:08:27,151 - fetch - INFO - reading config file
+2023-10-09 19:08:27,151 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:08:27,152 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:08:27,743 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:08:28,009 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:08:28,946 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:08:29,215 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:08:29,238 - fetch - INFO - init fetcher success
+2023-10-09 19:08:29,239 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:08:33,567 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:08:35,760 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/smithsonian/smithsonian.parquet
+2023-10-09 19:08:35,763 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/sketchfab/sketchfab.parquet
+2023-10-09 19:09:39,175 - fetch - INFO - reading config file
+2023-10-09 19:09:39,175 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:09:39,177 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:09:39,663 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:09:39,916 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:09:40,876 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:09:41,526 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:09:41,550 - fetch - INFO - init fetcher success
+2023-10-09 19:09:41,550 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:09:45,116 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:09:47,257 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/smithsonian/smithsonian.parquet
+2023-10-09 19:09:47,261 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/sketchfab/sketchfab.parquet
+2023-10-09 19:11:44,608 - fetch - INFO - reading config file
+2023-10-09 19:11:44,608 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:11:44,609 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:11:45,108 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:11:45,368 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:11:46,319 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:11:46,583 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:11:46,605 - fetch - INFO - init fetcher success
+2023-10-09 19:11:46,606 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:11:50,106 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:11:52,187 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/smithsonian/smithsonian.parquet
+2023-10-09 19:11:52,191 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/sketchfab/sketchfab.parquet
+2023-10-09 19:13:33,267 - fetch - INFO - reading config file
+2023-10-09 19:13:33,268 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:13:33,269 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:13:33,762 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:13:34,020 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:13:35,081 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:13:35,352 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:13:35,374 - fetch - INFO - init fetcher success
+2023-10-09 19:13:35,375 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:13:38,863 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:13:41,043 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/smithsonian/smithsonian.parquet
+2023-10-09 19:13:41,047 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/sketchfab/sketchfab.parquet
+2023-10-09 19:14:15,383 - fetch - INFO - reading config file
+2023-10-09 19:14:15,383 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:14:15,384 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:14:15,905 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:14:16,162 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:14:17,104 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:14:17,435 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:14:17,456 - fetch - INFO - init fetcher success
+2023-10-09 19:14:17,457 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:14:20,942 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:14:23,039 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/smithsonian/smithsonian.parquet
+2023-10-09 19:14:23,043 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/sketchfab/sketchfab.parquet
+2023-10-09 19:16:09,517 - fetch - INFO - reading config file
+2023-10-09 19:16:09,518 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:16:09,519 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:16:09,984 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:16:10,238 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:16:11,176 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:16:11,429 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:16:11,451 - fetch - INFO - init fetcher success
+2023-10-09 19:16:11,452 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:16:14,910 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:16:16,928 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/smithsonian/smithsonian.parquet
+2023-10-09 19:16:16,931 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/sketchfab/sketchfab.parquet
+2023-10-09 19:17:42,385 - fetch - INFO - reading config file
+2023-10-09 19:17:42,385 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:17:42,386 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:17:42,916 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:17:43,195 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:17:44,144 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:17:44,406 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:17:44,428 - fetch - INFO - init fetcher success
+2023-10-09 19:17:44,429 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:17:47,959 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:18:28,396 - fetch - INFO - reading config file
+2023-10-09 19:18:28,396 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:18:28,397 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:18:28,520 - fetch - ERROR - error when init fetcher, please check your network
+2023-10-09 19:18:28,520 - fetch - ERROR - (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /openai/clip-vit-base-patch16/resolve/main/config.json (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1129)')))"), '(Request ID: 0e70ce46-5caf-443e-9869-ff3da077a340)')
+2023-10-09 19:18:54,010 - fetch - INFO - reading config file
+2023-10-09 19:18:54,011 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:18:54,012 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:18:54,583 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:18:54,838 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:18:55,761 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:18:56,020 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:18:56,043 - fetch - INFO - init fetcher success
+2023-10-09 19:19:32,939 - fetch - INFO - reading config file
+2023-10-09 19:19:32,939 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:19:32,940 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:19:33,442 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:19:33,699 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:19:34,724 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:19:34,981 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:19:35,003 - fetch - INFO - init fetcher success
+2023-10-09 19:19:35,010 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:19:39,292 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:19:41,778 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/smithsonian/smithsonian.parquet
+2023-10-09 19:19:41,782 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/sketchfab/sketchfab.parquet
+2023-10-09 19:19:45,242 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:19:45,875 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:4527012 HTTP/1.1" 302 None
+2023-10-09 19:19:45,877 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:19:46,464 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/0f/a5/1c/7c/18/origin_2.STL?ofn=b3JpZ2luXzIuU1RM HTTP/1.1" 200 None
+2023-10-09 19:20:11,245 - fetch - INFO - reading config file
+2023-10-09 19:20:11,245 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:20:11,246 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:20:11,741 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:20:11,996 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:20:12,960 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:20:13,221 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:20:13,243 - fetch - INFO - init fetcher success
+2023-10-09 19:20:13,244 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:20:16,808 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:20:18,800 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/smithsonian/smithsonian.parquet
+2023-10-09 19:20:18,803 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/sketchfab/sketchfab.parquet
+2023-10-09 19:21:11,458 - fetch - INFO - reading config file
+2023-10-09 19:21:11,458 - fetch - INFO - init fetcher, preparing model and processor
+2023-10-09 19:21:11,460 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:21:11,954 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:21:12,250 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:21:13,202 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:21:13,474 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:21:13,495 - fetch - INFO - init fetcher success
+2023-10-09 19:21:13,496 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:21:17,034 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:21:19,073 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/smithsonian/smithsonian.parquet
+2023-10-09 19:21:19,076 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/sketchfab/sketchfab.parquet
+2023-10-09 19:21:21,791 - fetch - WARNING - sha256:aea21d5f9e696c05a7bd40d9b23bd0aec6a97c38860d11b2fed3ae3f954dbdfe render failed
+2023-10-09 19:21:34,844 - fetch - WARNING - sha256:974381c27956bb2d9b8ea4c2077903db9221de186aa2c36a7c6a4d434f9e1fef download failed
+2023-10-09 19:21:35,446 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:21:36,024 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:9566629 HTTP/1.1" 302 None
+2023-10-09 19:21:36,025 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:21:36,417 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/f9/96/78/8b/fa/Thieves_Guild_Guild_Mark.stl?ofn=VGhpZXZlc19HdWlsZF9HdWlsZF9NYXJrLnN0bA== HTTP/1.1" 200 None
+2023-10-09 19:21:36,538 - fetch - WARNING - sha256:80712e7d3facd602b50c8d39c552c382ed041a86bbc34ecbf215ad60e87b2308 render failed
+2023-10-09 19:21:37,136 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:21:37,718 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:6444831 HTTP/1.1" 302 None
+2023-10-09 19:21:37,719 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:21:38,529 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/e9/17/4c/95/96/6.stl?ofn=Ni5zdGw= HTTP/1.1" 200 None
+2023-10-09 19:21:38,641 - fetch - WARNING - sha256:65fa9771785940a7faf6de277a86bedf429367067ccd648d8c0200c493b1a245 render failed
+2023-10-09 19:21:39,241 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:21:39,853 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:12999819 HTTP/1.1" 302 None
+2023-10-09 19:21:39,854 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:21:40,645 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/a2/96/49/11/05/f658e7bb-6258-4fc8-bfe6-5f3e308f6664.stl?ofn=V29ya2luZ0NsYXNzX1Vuc2tpbGxlZE1lZXBsZXNfVHJheS5zdGw= HTTP/1.1" 200 None
+2023-10-09 19:21:40,865 - fetch - WARNING - sha256:556fad7251fcd5b552833d40125ae83561f09a07db86ccb60a67d22e966d00af render failed
+2023-10-09 19:21:41,463 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:21:42,032 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:11259147 HTTP/1.1" 302 None
+2023-10-09 19:21:42,033 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:21:42,719 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/11/98/26/f9/8c/2mm_Goblin_Pole_Arms_5.stl?ofn=Mm1tX0dvYmxpbl9Qb2xlX0FybXNfNS5zdGw= HTTP/1.1" 200 None
+2023-10-09 19:21:43,185 - fetch - WARNING - sha256:1fc8254d2f359ffa6e216021e6cef74348175e78e4e65e6eef36e911bbfe64f6 render failed
+2023-10-09 19:21:46,565 - fetch - WARNING - sha256:23d8785e6f046dc926435c3b5a1136b609f82a1988ca5f1cdc43d98de34ce001 download failed
+2023-10-09 19:21:47,167 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:21:47,900 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:3085788 HTTP/1.1" 302 None
+2023-10-09 19:21:47,902 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:21:48,258 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/8a/0d/9b/7c/71/Beefy_Fuing_Hands_on_platform.stl?ofn=QmVlZnlfRnVpbmdfSGFuZHNfb25fcGxhdGZvcm0uc3Rs HTTP/1.1" 200 None
+2023-10-09 19:21:48,529 - fetch - WARNING - sha256:4f327818f4f9850062f000735b392e6a9401626afdb9a9bbae58a5a637edb304 render failed
+2023-10-09 19:21:49,127 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:21:49,756 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:6775624 HTTP/1.1" 302 None
+2023-10-09 19:21:49,758 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:21:50,102 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/48/1b/5f/14/6d/CFA_Sauce_Cup_Holder_Universal.stl?ofn=Q0ZBX1NhdWNlX0N1cF9Ib2xkZXJfVW5pdmVyc2FsLnN0bA== HTTP/1.1" 200 None
+2023-10-09 19:21:50,219 - fetch - WARNING - sha256:791427c817e7f0e54bef82c79a449e63ab192f46744336d48dcd5a6c305445bc render failed
+2023-10-09 19:21:50,817 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:21:51,427 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:4909437 HTTP/1.1" 302 None
+2023-10-09 19:21:51,429 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:21:51,793 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/bf/4a/42/38/17/Roller_55.50x58mm_v1.stl?ofn=Um9sbGVyXzU1LjUweDU4bW1fdjEuc3Rs HTTP/1.1" 200 None
+2023-10-09 19:21:51,915 - fetch - WARNING - sha256:f1d8330cb846c3c68eea3775e6781b8a15d80fe00c5a1a7dfd5b160fa627e739 render failed
+2023-10-09 19:21:52,513 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:21:53,489 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:7540046 HTTP/1.1" 302 None
+2023-10-09 19:21:53,491 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:21:54,106 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/26/52/e5/6c/ec/Turker_dremel_router_base.stl?ofn=VHVya2VyX2RyZW1lbF9yb3V0ZXJfYmFzZS5zdGw= HTTP/1.1" 200 None
+2023-10-09 19:21:54,218 - fetch - WARNING - sha256:89ab9cd985b8f1ceeab1fa10c8b06fa599eb35b94dfbd8cc7491c7a0b5facbba render failed
+2023-10-09 19:21:54,815 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:21:55,606 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:3287332 HTTP/1.1" 302 None
+2023-10-09 19:21:55,608 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:21:56,004 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/4a/44/31/a6/ee/batshield_0.stl?ofn=YmF0c2hpZWxkXzAuc3Rs HTTP/1.1" 200 None
+2023-10-09 19:21:57,652 - fetch - WARNING - sha256:381188a50a4e4a4f5c868a2a20b2e5ddaeca04be206ce178a8377f484530d10c render failed
+2023-10-09 19:21:58,249 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): www.thingiverse.com:443
+2023-10-09 19:21:58,892 - urllib3.connectionpool - DEBUG - https://www.thingiverse.com:443 "GET /download:2484848 HTTP/1.1" 302 None
+2023-10-09 19:21:58,894 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): cdn.thingiverse.com:443
+2023-10-09 19:21:59,746 - urllib3.connectionpool - DEBUG - https://cdn.thingiverse.com:443 "GET /assets/92/9b/d6/3a/50/shanty-1-printable.stl?ofn=c2hhbnR5LTEtcHJpbnRhYmxlLnN0bA== HTTP/1.1" 200 None
+2023-10-09 19:22:00,439 - fetch - WARNING - sha256:af179aa569bab1d0b1f89426d83773057319ae748c585f819fbd4f7afb926485 render failed
+2023-10-09 19:23:44,743 - root - INFO - reading config file
+2023-10-09 19:23:44,744 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:23:44,745 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2023-10-09 19:23:45,245 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:23:45,501 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/config.json HTTP/1.1" 200 0
+2023-10-09 19:23:46,434 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/preprocessor_config.json HTTP/1.1" 200 0
+2023-10-09 19:23:46,697 - urllib3.connectionpool - DEBUG - https://huggingface.co:443 "HEAD /openai/clip-vit-base-patch16/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2023-10-09 19:23:46,718 - root - INFO - init fetcher success
+2023-10-09 19:23:46,719 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/github/github.parquet
+2023-10-09 19:23:50,483 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/thingiverse/thingiverse.parquet
+2023-10-09 19:23:52,850 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/smithsonian/smithsonian.parquet
+2023-10-09 19:23:52,854 - fsspec.local - DEBUG - open file: /home/loping151/Disks/TiPlus7100/data/3D_funiture/data/sketchfab/sketchfab.parquet
+2023-10-09 19:23:55,650 - root - WARNING - sha256:aea21d5f9e696c05a7bd40d9b23bd0aec6a97c38860d11b2fed3ae3f954dbdfe render failed
+2023-10-09 19:24:23,108 - root - INFO - reading config file
+2023-10-09 19:24:23,109 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:24:25,109 - root - INFO - init fetcher success
+2023-10-09 19:25:57,487 - root - INFO - reading config file
+2023-10-09 19:25:57,487 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:25:59,450 - root - INFO - init fetcher success
+2023-10-09 19:26:07,854 - root - WARNING - sha256:aea21d5f9e696c05a7bd40d9b23bd0aec6a97c38860d11b2fed3ae3f954dbdfe render failed
+2023-10-09 19:26:46,691 - root - INFO - reading config file
+2023-10-09 19:26:46,692 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:26:49,256 - root - INFO - init fetcher success
+2023-10-09 19:26:58,093 - root - WARNING - sha256:aea21d5f9e696c05a7bd40d9b23bd0aec6a97c38860d11b2fed3ae3f954dbdfe render failed
+2023-10-09 19:26:58,093 - root - WARNING - [Errno 2] No such file or directory: 'https://thingiverse.com/thing:2748448/files?fileId=4527012'
+2023-10-09 19:28:33,244 - root - INFO - reading config file
+2023-10-09 19:28:33,244 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:28:35,413 - root - INFO - init fetcher success
+2023-10-09 19:30:01,028 - root - INFO - reading config file
+2023-10-09 19:30:01,029 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:30:03,533 - root - INFO - init fetcher success
+2023-10-09 19:32:22,828 - root - INFO - reading config file
+2023-10-09 19:32:22,829 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:32:24,988 - root - INFO - init fetcher success
+2023-10-09 19:33:40,536 - root - INFO - reading config file
+2023-10-09 19:33:40,537 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:33:42,531 - root - INFO - init fetcher success
+2023-10-09 19:35:45,671 - root - INFO - sha256:aea21d5f9e696c05a7bd40d9b23bd0aec6a97c38860d11b2fed3ae3f954dbdfe match chair with similarity 1.0
+2023-10-09 19:35:55,610 - root - WARNING - sha256:974381c27956bb2d9b8ea4c2077903db9221de186aa2c36a7c6a4d434f9e1fef download failed
+2023-10-09 19:35:57,544 - root - INFO - sha256:80712e7d3facd602b50c8d39c552c382ed041a86bbc34ecbf215ad60e87b2308 match chair with similarity 1.0
+2023-10-09 19:35:59,737 - root - INFO - sha256:65fa9771785940a7faf6de277a86bedf429367067ccd648d8c0200c493b1a245 match chair with similarity 1.0
+2023-10-09 19:36:03,145 - root - INFO - sha256:556fad7251fcd5b552833d40125ae83561f09a07db86ccb60a67d22e966d00af match chair with similarity 1.0
+2023-10-09 19:36:05,161 - root - INFO - sha256:1fc8254d2f359ffa6e216021e6cef74348175e78e4e65e6eef36e911bbfe64f6 match chair with similarity 1.0
+2023-10-09 19:36:09,126 - root - WARNING - sha256:23d8785e6f046dc926435c3b5a1136b609f82a1988ca5f1cdc43d98de34ce001 download failed
+2023-10-09 19:36:11,480 - root - INFO - sha256:4f327818f4f9850062f000735b392e6a9401626afdb9a9bbae58a5a637edb304 match chair with similarity 1.0
+2023-10-09 19:36:13,419 - root - INFO - sha256:791427c817e7f0e54bef82c79a449e63ab192f46744336d48dcd5a6c305445bc match chair with similarity 1.0
+2023-10-09 19:36:15,434 - root - INFO - sha256:f1d8330cb846c3c68eea3775e6781b8a15d80fe00c5a1a7dfd5b160fa627e739 match chair with similarity 1.0
+2023-10-09 19:36:17,363 - root - INFO - sha256:89ab9cd985b8f1ceeab1fa10c8b06fa599eb35b94dfbd8cc7491c7a0b5facbba match chair with similarity 1.0
+2023-10-09 19:36:25,231 - root - INFO - sha256:381188a50a4e4a4f5c868a2a20b2e5ddaeca04be206ce178a8377f484530d10c match chair with similarity 1.0
+2023-10-09 19:36:27,887 - root - INFO - sha256:af179aa569bab1d0b1f89426d83773057319ae748c585f819fbd4f7afb926485 match chair with similarity 1.0
+2023-10-09 19:36:30,020 - root - INFO - sha256:4645435e62e5fd36ca504dae8b82d2f93ec565c19097f4a09bf92bc2a4042868 match chair with similarity 1.0
+2023-10-09 19:36:32,039 - root - INFO - sha256:b212ff511b147dbb749df95eb7067f4848fa77143af445bbb3c4df6ddc11cbd4 match chair with similarity 1.0
+2023-10-09 19:42:09,952 - root - INFO - reading config file
+2023-10-09 19:42:09,952 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:42:12,071 - root - INFO - init fetcher success
+2023-10-09 19:42:23,195 - root - INFO - sha256:aea21d5f9e696c05a7bd40d9b23bd0aec6a97c38860d11b2fed3ae3f954dbdfe match chair with similarity 22.10464096069336
+2023-10-09 19:42:33,297 - root - WARNING - sha256:974381c27956bb2d9b8ea4c2077903db9221de186aa2c36a7c6a4d434f9e1fef download failed
+2023-10-09 19:42:35,210 - root - INFO - sha256:80712e7d3facd602b50c8d39c552c382ed041a86bbc34ecbf215ad60e87b2308 match chair with similarity 24.77565574645996
+2023-10-09 19:42:37,308 - root - INFO - sha256:65fa9771785940a7faf6de277a86bedf429367067ccd648d8c0200c493b1a245 match chair with similarity 24.254711151123047
+2023-10-09 19:42:39,529 - root - INFO - sha256:556fad7251fcd5b552833d40125ae83561f09a07db86ccb60a67d22e966d00af match chair with similarity 26.794780731201172
+2023-10-09 19:42:41,893 - root - INFO - sha256:1fc8254d2f359ffa6e216021e6cef74348175e78e4e65e6eef36e911bbfe64f6 match chair with similarity 24.27420425415039
+2023-10-09 19:42:45,509 - root - WARNING - sha256:23d8785e6f046dc926435c3b5a1136b609f82a1988ca5f1cdc43d98de34ce001 download failed
+2023-10-09 19:42:48,221 - root - INFO - sha256:4f327818f4f9850062f000735b392e6a9401626afdb9a9bbae58a5a637edb304 match chair with similarity 24.644750595092773
+2023-10-09 19:42:50,125 - root - INFO - sha256:791427c817e7f0e54bef82c79a449e63ab192f46744336d48dcd5a6c305445bc match chair with similarity 24.18073081970215
+2023-10-09 19:42:52,290 - root - INFO - sha256:f1d8330cb846c3c68eea3775e6781b8a15d80fe00c5a1a7dfd5b160fa627e739 match chair with similarity 25.718191146850586
+2023-10-09 19:42:54,323 - root - INFO - sha256:89ab9cd985b8f1ceeab1fa10c8b06fa599eb35b94dfbd8cc7491c7a0b5facbba match chair with similarity 24.049171447753906
+2023-10-09 19:43:03,862 - root - INFO - sha256:381188a50a4e4a4f5c868a2a20b2e5ddaeca04be206ce178a8377f484530d10c match chair with similarity 22.63374137878418
+2023-10-09 19:43:06,513 - root - INFO - sha256:af179aa569bab1d0b1f89426d83773057319ae748c585f819fbd4f7afb926485 match chair with similarity 24.186683654785156
+2023-10-09 19:43:08,678 - root - INFO - sha256:4645435e62e5fd36ca504dae8b82d2f93ec565c19097f4a09bf92bc2a4042868 match chair with similarity 23.471263885498047
+2023-10-09 19:43:10,661 - root - INFO - sha256:b212ff511b147dbb749df95eb7067f4848fa77143af445bbb3c4df6ddc11cbd4 match chair with similarity 21.825292587280273
+2023-10-09 19:43:13,016 - root - INFO - sha256:241913bdb4abcf2a81ec31f335ee4a8f13933790ebe35a0377205db036f1432f match chair with similarity 24.201871871948242
+2023-10-09 19:43:15,548 - root - INFO - sha256:9856f0d87f63bffdd4a54fb688915fbdc29e295a546eedb2482eb78d317324d5 match chair with similarity 23.639385223388672
+2023-10-09 19:43:17,798 - root - INFO - sha256:2e88f2743bc9f4051fc17be507317ee933f7b8dd639cfca6dc626d7d89ba8f72 match chair with similarity 26.28520965576172
+2023-10-09 19:43:19,755 - root - INFO - sha256:d63ebf45052a13398390adc6edcaad377de9ef82b08890a991276685eb477f38 match chair with similarity 26.162370681762695
+2023-10-09 19:58:00,119 - root - INFO - reading config file
+2023-10-09 19:58:00,119 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:58:34,767 - root - INFO - init fetcher success
+2023-10-09 19:59:04,945 - root - INFO - reading config file
+2023-10-09 19:59:04,952 - root - INFO - init fetcher, preparing model and processor
+2023-10-09 19:59:06,472 - root - INFO - init fetcher success
+2023-10-09 19:59:15,398 - root - INFO - sha256:aea21d5f9e696c05a7bd40d9b23bd0aec6a97c38860d11b2fed3ae3f954dbdfe match chair with similarity tensor(24.6094, device='cuda:0', dtype=torch.float16)
+2023-10-09 19:59:36,385 - root - WARNING - sha256:974381c27956bb2d9b8ea4c2077903db9221de186aa2c36a7c6a4d434f9e1fef download failed
+2023-10-09 19:59:38,282 - root - INFO - sha256:80712e7d3facd602b50c8d39c552c382ed041a86bbc34ecbf215ad60e87b2308 match chair with similarity tensor(27.3750, device='cuda:0', dtype=torch.float16)
+2023-10-09 19:59:40,236 - root - INFO - sha256:65fa9771785940a7faf6de277a86bedf429367067ccd648d8c0200c493b1a245 match chair with similarity tensor(26.4062, device='cuda:0', dtype=torch.float16)
+2023-10-09 19:59:42,483 - root - INFO - sha256:556fad7251fcd5b552833d40125ae83561f09a07db86ccb60a67d22e966d00af match chair with similarity tensor(26.7500, device='cuda:0', dtype=torch.float16)
+2023-10-09 19:59:44,507 - root - INFO - sha256:1fc8254d2f359ffa6e216021e6cef74348175e78e4e65e6eef36e911bbfe64f6 match chair with similarity tensor(28.9688, device='cuda:0', dtype=torch.float16)
+2023-10-09 19:59:48,804 - root - WARNING - sha256:23d8785e6f046dc926435c3b5a1136b609f82a1988ca5f1cdc43d98de34ce001 download failed
+2023-10-09 19:59:52,305 - root - INFO - sha256:4f327818f4f9850062f000735b392e6a9401626afdb9a9bbae58a5a637edb304 match chair with similarity tensor(26.5938, device='cuda:0', dtype=torch.float16)
+2023-10-09 19:59:54,423 - root - INFO - sha256:791427c817e7f0e54bef82c79a449e63ab192f46744336d48dcd5a6c305445bc match chair with similarity tensor(25.9062, device='cuda:0', dtype=torch.float16)
+2023-10-09 19:59:56,507 - root - INFO - sha256:f1d8330cb846c3c68eea3775e6781b8a15d80fe00c5a1a7dfd5b160fa627e739 match chair with similarity tensor(26.7969, device='cuda:0', dtype=torch.float16)

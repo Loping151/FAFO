@@ -1,0 +1,8 @@
+{
+    "threshold": 0.8,
+    "data_path": "./data",
+    "categories": ["chair"],
+    "target_type": ["stl"],
+    "amount": 500,
+    "seed": 1
+}
