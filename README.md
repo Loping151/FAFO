@@ -40,11 +40,11 @@ If you really want to search for objects using a general name, use `fetcher`.
 I thought about how to classify things with CLIP. Maybe I can set a threshold? But different things do not share one. Maybe I use BLIP to help? But we can no more use a general class. Then I discovered this: I can directly compare the clip score of (obj, given-class) and (obj, 'object'), that is:
 
 <p align="center">
-  <img src="assets/chair.png" width="100" />
-  <img src="assets/dog.jpg" width="100" />
-  <img src="assets/lego.png" width="100" />
-  <img src="assets/desktop.jpg" width="100" />
-  <img src="assets/person.jpg" width="100" />
+  <img src="assets/chair.png" width="150" />
+  <img src="assets/dog.jpg" width="150" />
+  <img src="assets/lego.png" width="150" />
+  <img src="assets/desktop.jpg" width="150" />
+  <img src="assets/person.jpg" width="150" />
 </p>
 
 | gt\score | Chair | Dog  | Lego | Desktop | Person | Object |
