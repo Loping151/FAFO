@@ -392,3 +392,6 @@
 2023-11-04 21:21:12,282 - root - INFO - init fetcher, preparing model and processor
 2023-11-04 21:21:56,108 - root - INFO - init fetcher success
 2023-11-04 21:21:56,108 - root - INFO - data path not exists, create it at ./data
+2023-11-04 21:24:41,499 - root - WARNING - sha256:f53d48a6130954e6f42b654352e5325058e48960654e0bde6478f58c2172c82c download failed
+2023-11-04 21:25:01,496 - root - WARNING - sha256:471faf8460bbbdb8af904ae1abff8b18a869e01264d6a4065c7a4e34b3ed75e1 download failed
+2023-11-04 21:26:22,944 - root - WARNING - sha256:d9cd28a04b4f9783563e4c28fd95ff6bfee8a7b97ece6e1d34c18ddb8c038fc8 download failed
