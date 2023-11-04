@@ -5,11 +5,10 @@
 # License: MIT License
 
 
-import objaverse # tested version: 0.1.5
+import objaverse # tested version: 0.1.7
 import objaverse.xl as oxl
 import os
 import torch
-from torch import nn
 import clip
 import logging
 import json
@@ -17,7 +16,7 @@ import pandas as pd
 import shutil
 from transformers import AutoProcessor, Blip2ForConditionalGeneration
 from renderer import render_stl, render_obj
-
+import random
     
 render = {"stl": render_stl, "obj": render_obj}
 
@@ -35,12 +34,12 @@ class Fetcher():
             logging.error(f"Error parsing JSON in '{config_path}'. Check the JSON format.")
             exit(1)
             
-        self.threshold = config_data.get('threshold', 0.5)
+        self.threshold = config_data.get('threshold', 1000)
         self.data_path = config_data.get('data_path', './data')
         self.categories = config_data.get('categories', ['chair', 'sofa', 'table', 'bed'])
         self.target_type = config_data.get('target_type', ['obj'])
         self.amount = config_data.get('amount', 500)
-        self.seed = config_data.get('seed', 1)
+        self.seed = config_data.get('seed', random.randint(0, 1000))
         assert isinstance(self.threshold, float) and isinstance(self.data_path, str) \
             and isinstance(self.categories, list) and isinstance(self.amount, int) # check type
         assert set(self.target_type).issubset({'stl', 'obj'}) # supported target type
@@ -56,7 +55,7 @@ class Fetcher():
         except Exception as e:
             logging.error('error when init fetcher, please check your network')
             logging.error(e)
-            exit(1)
+            exit(2)
         logging.info('init fetcher success')
 
     def fetch(self, data_path, categories, amount):
@@ -75,15 +74,15 @@ class Fetcher():
         
         fetched_amount = 0
         for _, row in annotations.iterrows():
-            info = 'sha256:'
+            info = 'source:'
             file_type = row['fileType']
             if file_type not in self.target_type:
                 continue
-            sha256 = row['sha256']
-            info += sha256
+            source, sha256 = row['source'], row['sha256']
+            info = source
+            info += ' sha256:'+sha256
             
             path_dict = oxl.download_objects(objects=pd.DataFrame(row).transpose(), download_dir='./data/')
-            print(path_dict, 100)
             if len(path_dict) == 0:
                 info += ' download failed'
                 logging.warning(info)
