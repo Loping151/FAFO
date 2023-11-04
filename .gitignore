@@ -5,5 +5,5 @@ tmp
 tmp/
 tmp.*
 *.pyc
-fetch.log
+*.log
 __pycache__

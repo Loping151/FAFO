@@ -398,3 +398,39 @@
 2023-11-04 21:26:37,226 - root - WARNING - sha256:4f6f5d8ad31899bb75fc98600e69b9f6d775de43dc82ebd0e42f8d50812c6c1a download failed
 2023-11-04 21:29:06,846 - root - WARNING - sha256:b20804787449143288dadce31f686b9b007e870f09158710fd612edb43bba6a0 download failed
 2023-11-04 21:29:34,978 - root - WARNING - sha256:361c8217b12b015da819be89cdeea93aa35593b3e03d63d58fb35e9e4557cb98 download failed
+2023-11-04 21:30:52,921 - root - WARNING - sha256:bbb2c269baf331e358f14de6c4497ee319b71d85c4fd35789ddc316928889b20 download failed
+2023-11-04 21:32:13,440 - root - WARNING - sha256:90d56311eb1a1000ff85620b5a74bd59be57b18956d9842c6009b53dec1456e3 download failed
+2023-11-04 21:33:03,105 - root - WARNING - sha256:2ccb99218723d53eb78d7d43723bf053b557b6ab364f06237eeb24dfb8430100 download failed
+2023-11-04 21:33:18,197 - root - WARNING - sha256:f550e2b8beb892d8b08753c331fc27aca489610f90382aaa18adad7bbd24b913 download failed
+2023-11-04 21:33:19,766 - root - WARNING - sha256:b54e76cb76398387c2dcf00b579b3c6f3565d1fc1fcf2d46c633e99f20b7aee5 download failed
+2023-11-04 21:35:31,902 - root - WARNING - sha256:6ac7be74b9b5d45b16eb354bca5271695b9cc4d25f11987b87850636dd1eb121 download failed
+2023-11-04 21:36:03,278 - root - WARNING - sha256:ced75392b18936fd359189e5dcc2657facb856923e521815294bd510ef46a95f download failed
+2023-11-04 21:36:17,192 - root - WARNING - sha256:449cb943acda90f6f96d1a1de7c69f732c904e31e79b895d1560924853771b45 download failed
+2023-11-04 21:36:55,990 - root - WARNING - sha256:b497563937ba7389d381ecc3524429cd84ddf9c2ebb90d99e4a5af005d29d8c3 download failed
+2023-11-04 21:38:12,489 - root - WARNING - sha256:af7759234d7ea4ca5603f16bef7c628c3f01f9cfa125c5f6f3fc6386cb3219de download failed
+2023-11-04 21:38:25,782 - root - WARNING - sha256:af75bdd1858a241b4f3e7bbc1c469ada6a100c20ca4d7cb5b90b3183b4ecb93b download failed
+2023-11-04 21:40:36,353 - root - WARNING - sha256:f57e7a890e421682e32e047a5a5674bcf245a4d8e0fd827a44808bc3e4433749 download failed
+2023-11-04 21:41:43,364 - root - WARNING - sha256:563797c59d9993dcf261845121b84fa99f798acff5f8f0c6c8cb1b3a0006b681 download failed
+2023-11-04 21:42:49,400 - root - INFO - reading config file
+2023-11-04 21:42:49,401 - root - INFO - init fetcher, preparing model and processor
+2023-11-04 21:43:01,002 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 42840107-0f43-405a-ba86-4c47d2feb4eb)')' thrown while requesting HEAD https://huggingface.co/Salesforce/blip2-opt-2.7b/resolve/main/config.json
+2023-11-04 21:43:11,024 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 91a12d53-a717-413a-bf25-f7a4c3c95931)')' thrown while requesting HEAD https://huggingface.co/Salesforce/blip2-opt-2.7b/resolve/main/config.json
+2023-11-04 21:43:58,713 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 58da5a9f-34eb-477e-8cf7-f6f5ec818971)')' thrown while requesting HEAD https://huggingface.co/Salesforce/blip2-opt-2.7b/resolve/main/generation_config.json
+2023-11-04 21:44:09,608 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: e7a9da8d-a51e-414a-9ec7-a16da9eb04a7)')' thrown while requesting HEAD https://huggingface.co/Salesforce/blip2-opt-2.7b/resolve/main/preprocessor_config.json
+2023-11-04 21:44:19,628 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 6c59da1d-ffc1-4918-bb80-db51d4ad342a)')' thrown while requesting HEAD https://huggingface.co/Salesforce/blip2-opt-2.7b/resolve/main/preprocessor_config.json
+2023-11-04 21:44:29,652 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: dcc436a1-dc3e-4e76-b959-a3ccd6a93de6)')' thrown while requesting HEAD https://huggingface.co/Salesforce/blip2-opt-2.7b/resolve/main/preprocessor_config.json
+2023-11-04 21:44:40,766 - root - INFO - reading config file
+2023-11-04 21:44:40,767 - root - INFO - init fetcher, preparing model and processor
+2023-11-04 21:44:52,344 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 50762acd-bede-4031-989b-fed9fce75cc7)')' thrown while requesting HEAD https://huggingface.co/Salesforce/blip2-opt-2.7b/resolve/main/config.json
+2023-11-04 21:45:02,364 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: a88311d9-6029-4843-acf1-9dd6fcaacb7c)')' thrown while requesting HEAD https://huggingface.co/Salesforce/blip2-opt-2.7b/resolve/main/config.json
+2023-11-04 21:45:49,988 - huggingface_hub.utils._http - WARNING - '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 0f63d5d8-9f00-4bfa-abdf-e8505f35d34e)')' thrown while requesting HEAD https://huggingface.co/Salesforce/blip2-opt-2.7b/resolve/main/generation_config.json
+2023-11-04 21:45:59,902 - root - INFO - reading config file
+2023-11-04 21:45:59,902 - root - INFO - init fetcher, preparing model and processor
+2023-11-04 21:47:40,182 - root - INFO - init fetcher success
+2023-11-04 21:49:05,873 - root - WARNING - sha256:f53d48a6130954e6f42b654352e5325058e48960654e0bde6478f58c2172c82c download failed
+2023-11-04 21:49:20,020 - root - WARNING - sha256:471faf8460bbbdb8af904ae1abff8b18a869e01264d6a4065c7a4e34b3ed75e1 download failed
+2023-11-04 21:50:39,590 - root - WARNING - sha256:d9cd28a04b4f9783563e4c28fd95ff6bfee8a7b97ece6e1d34c18ddb8c038fc8 download failed
+2023-11-04 21:50:53,742 - root - WARNING - sha256:4f6f5d8ad31899bb75fc98600e69b9f6d775de43dc82ebd0e42f8d50812c6c1a download failed
+2023-11-04 21:53:21,899 - root - INFO - reading config file
+2023-11-04 21:53:21,899 - root - INFO - init fetcher, preparing model and processor
+2023-11-04 21:55:12,456 - root - INFO - init fetcher success

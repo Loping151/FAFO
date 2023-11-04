@@ -83,7 +83,7 @@ class Fetcher():
             info += sha256
             
             path_dict = oxl.download_objects(objects=pd.DataFrame(row).transpose(), download_dir='./data/')
-            
+            print(path_dict, 100)
             if len(path_dict) == 0:
                 info += ' download failed'
                 logging.warning(info)
