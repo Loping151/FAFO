@@ -10,105 +10,15 @@ import objaverse.xl as oxl
 import os
 import torch
 from torch import nn
-from PIL import Image
 import clip
 import logging
 import json
 import pandas as pd
-import numpy as np
-from stl import mesh
-import matplotlib.pyplot as plt
-import mpl_toolkits.mplot3d as mplot3d
 import shutil
 from transformers import AutoProcessor, Blip2ForConditionalGeneration
+from renderer import render_stl, render_obj
 
-def render_stl(path):
-    your_mesh = mesh.Mesh.from_file(path)
-
-    min_x, max_x = np.min(your_mesh.x), np.max(your_mesh.x)
-    min_y, max_y = np.min(your_mesh.y), np.max(your_mesh.y)
-    min_z, max_z = np.min(your_mesh.z), np.max(your_mesh.z)
-
-    width = max_x - min_x
-    height = max_y - min_y
-
-    output_width = 800
-    output_height = int(output_width * (height / width))
-
-    fig = plt.figure(figsize=(output_width / 100, output_height / 100))
-    fig.set_dpi(100)
-    ax = fig.add_subplot(111, projection='3d')
-
-    ax.view_init(elev=20, azim=30)
-
-    ax.add_collection3d(mplot3d.art3d.Poly3DCollection(your_mesh.vectors, facecolors='gray'))
-
-    margin = 10
-    ax.set_xlim([min_x - margin, max_x + margin])
-    ax.set_ylim([min_y - margin, max_y + margin])
-    ax.set_zlim([min_z - margin, max_z + margin])
-
-    ax.axis('off')
-
-    ax.set_facecolor((1, 1, 1, 0))
-    fig.patch.set_facecolor((1, 1, 1, 0))
-
-    fig.canvas.draw()
-    img_arr = np.array(fig.canvas.renderer.buffer_rgba())
-    img = Image.fromarray(img_arr)
-
-    img.save(path[:-4]+'.png')
-
-    return img, path[:-4]+'.png'
     
-def render_obj(path):
-    with open(path, 'r') as obj_file:
-        lines = obj_file.readlines()
-
-    vertices = []
-    faces = []
-
-    for line in lines:
-        if line.startswith('v '):
-            parts = line.strip().split()
-            x, y, z = map(float, parts[1:])
-            vertices.append([x, y, z])
-        elif line.startswith('f '):
-            parts = line.strip().split()
-            face = [int(vertex.split('/')[0]) for vertex in parts[1:]]
-            faces.append(face)
-
-    vertices = np.array(vertices)
-    faces = np.array(faces)
-
-    fig = plt.figure(figsize=(8, 8))
-    ax = fig.add_subplot(111, projection='3d')
-
-    for face in faces:
-        vertices_3d = vertices[face - 1]
-        ax.add_collection3d(mplot3d.art3d.Poly3DCollection([vertices_3d], facecolors='gray'))
-
-    min_x, max_x = np.min(vertices[:, 0]), np.max(vertices[:, 0])
-    min_y, max_y = np.min(vertices[:, 1]), np.max(vertices[:, 1])
-    min_z, max_z = np.min(vertices[:, 2]), np.max(vertices[:, 2])
-
-    margin = 10
-    ax.set_xlim([min_x - margin, max_x + margin])
-    ax.set_ylim([min_y - margin, max_y + margin])
-    ax.set_zlim([min_z - margin, max_z + margin])
-
-    ax.axis('off')
-    ax.set_facecolor((1, 1, 1, 0))
-    fig.patch.set_facecolor((1, 1, 1, 0))
-
-    fig.canvas.draw()
-    img_arr = np.array(fig.canvas.renderer.buffer_rgba())
-    img = Image.fromarray(img_arr)
-
-    img.save(path[:-4] + '.png')
-
-    return img, path[:-4] + '.png'
-
 render = {"stl": render_stl, "obj": render_obj}
 
 
@@ -127,8 +37,8 @@ class Fetcher():
             
         self.threshold = config_data.get('threshold', 0.5)
         self.data_path = config_data.get('data_path', './data')
-        self.categories = config_data.get('categories', ['chair'])
-        self.target_type = config_data.get('target_type', ['stl'])
+        self.categories = config_data.get('categories', ['chair', 'sofa', 'table', 'bed'])
+        self.target_type = config_data.get('target_type', ['obj'])
         self.amount = config_data.get('amount', 500)
         self.seed = config_data.get('seed', 1)
         assert isinstance(self.threshold, float) and isinstance(self.data_path, str) \
@@ -189,6 +99,7 @@ class Fetcher():
                 
             for category in categories:
                 similarity, is_match = self.test_clip(image, category, self.threshold)
+                is_match = is_match or self.test_clip_binary(image, category)
                 is_match = is_match or self.test_blip(image, category)
                 if is_match:
                     info += ' match '+category+' with similarity '+str(similarity)
@@ -216,7 +127,7 @@ class Fetcher():
             
     def test_clip(self, image, category, threshold):
         image = self.transform_clip(image).unsqueeze(0).to(self.device)
-        text = clip.tokenize(["a photo of a "+category]).to(self.device)
+        text = clip.tokenize(["a "+category]).to(self.device)
         with torch.no_grad():
             image_features = self.clip.encode_image(image)
             text_features = self.clip.encode_text(text)
@@ -224,6 +135,9 @@ class Fetcher():
         similarity_score = (image_features @ text_features.T).mean()
 
         return similarity_score, similarity_score > threshold
+    
+    def test_clip_binary(self, images, category, threshold=0):
+        return self.test_clip(images, category, threshold)[0] > self.test_clip(images, 'object', threshold)[0] + 0.3
 
     def test_blip(self, image, category):
         inputs = self.transform_blip(image, return_tensors="pt").to(self.device, torch.float16)
@@ -235,10 +149,10 @@ class Fetcher():
 
     def __call__(self):
         if self.fetch(self.data_path, self.categories, self.amount):
-            print("done")
+            print("Done.")
         else:
-            print("not enough data, consider lowering the threshold or the amount")
-        return
+            print("Not enough data, consider lowering the threshold or the amount.")
+        return 0
         
 
 
