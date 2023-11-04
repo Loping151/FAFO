@@ -1,6 +1,9 @@
 *.json
 data
 data/
+tmp
+tmp/
 tmp.*
+*.pyc
 fetch.log
 __pycache__
