@@ -2,6 +2,5 @@
 data
 data/
 tmp.*
-*.png
 fetch.log
 __pycache__
