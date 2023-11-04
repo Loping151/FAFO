@@ -396,3 +396,5 @@
 2023-11-04 21:25:01,496 - root - WARNING - sha256:471faf8460bbbdb8af904ae1abff8b18a869e01264d6a4065c7a4e34b3ed75e1 download failed
 2023-11-04 21:26:22,944 - root - WARNING - sha256:d9cd28a04b4f9783563e4c28fd95ff6bfee8a7b97ece6e1d34c18ddb8c038fc8 download failed
 2023-11-04 21:26:37,226 - root - WARNING - sha256:4f6f5d8ad31899bb75fc98600e69b9f6d775de43dc82ebd0e42f8d50812c6c1a download failed
+2023-11-04 21:29:06,846 - root - WARNING - sha256:b20804787449143288dadce31f686b9b007e870f09158710fd612edb43bba6a0 download failed
+2023-11-04 21:29:34,978 - root - WARNING - sha256:361c8217b12b015da819be89cdeea93aa35593b3e03d63d58fb35e9e4557cb98 download failed

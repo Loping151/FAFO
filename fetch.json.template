@@ -1,8 +1,8 @@
 {
-    "threshold": 0.8,
+    "threshold": 1000000,
     "data_path": "./data",
-    "categories": ["chair"],
-    "target_type": ["stl"],
+    "categories": ["toy", "character", "gun", "vehicle", "plane", "flower"],
+    "target_type": ["obj"],
     "amount": 500,
     "seed": 1
 }
