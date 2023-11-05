@@ -1,6 +1,5 @@
 import bpy
 import sys
-import os
 
 argv = sys.argv
 argv = argv[argv.index("--") + 1:]

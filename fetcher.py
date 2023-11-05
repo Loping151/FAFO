@@ -15,10 +15,10 @@ import json
 import pandas as pd
 import shutil
 from transformers import AutoProcessor, Blip2ForConditionalGeneration
-from renderer import render_stl, render_obj
+from renderer import *
 import random
     
-render = {"stl": render_stl, "obj": render_obj}
+render = {"stl": render_stl, "obj": render_obj, "glb": render_glb, "ply": render_ply}
 
 
 class Fetcher():
@@ -42,7 +42,7 @@ class Fetcher():
         self.seed = config_data.get('seed', random.randint(0, 1000))
         assert isinstance(self.threshold, float) and isinstance(self.data_path, str) \
             and isinstance(self.categories, list) and isinstance(self.amount, int) # check type
-        assert set(self.target_type).issubset({'stl', 'obj'}) # supported target type
+        assert set(self.target_type).issubset({'stl', 'obj', 'glb', 'ply'}) # supported target type
         logging.info('init fetcher, preparing model and processor')
         try:
             self.device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -75,6 +75,8 @@ class Fetcher():
         fetched_amount = 0
         for _, row in annotations.iterrows():
             info = 'source:'
+            # if row['source'] == 'github':
+            #     continue
             file_type = row['fileType']
             if file_type not in self.target_type:
                 continue
@@ -101,7 +103,7 @@ class Fetcher():
                 is_match = is_match or self.test_clip_binary(image, category)
                 is_match = is_match or self.test_blip(image, category)
                 if is_match:
-                    info += ' match '+category+' with similarity '+str(similarity)
+                    info += ' match '+category+' with similarity '+str(similarity.item())
                     fetched_amount += 1
                     shutil.move(image_path, os.path.join(data_path, 'fetched', category, sha256+'.'+image_path.split('.')[-1]))
                     shutil.move(path, os.path.join(data_path, 'fetched', category, sha256+'.'+file_type))
