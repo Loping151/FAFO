@@ -2,6 +2,10 @@
 
 Fetch Anything From Objaverse
 
+## Known Issues
+
+You might fail to download anything from GitHub using Objverse. Most of the data are from github so this seems a serious problem. It is an issue with Objaverse itself, see: https://github.com/allenai/objaverse-xl/issues/5
+
 ## Introduction
 
 FAFO (Fetch Anything From Objaverse) is a tool that enables you to convert 3D models from glTF format to OBJ format easily and efficiently.
